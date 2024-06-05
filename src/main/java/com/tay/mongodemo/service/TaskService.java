@@ -28,11 +28,11 @@ public class TaskService {
 		return taskRepo.findById(taskId).orElseThrow();
 	}
 
-	public List<Task> getTasksByAssignee(String assignee) {
+	public List<Task> getTaskByAssignee(String assignee) {
 		return taskRepo.findByAssignee(assignee);
 	}
 
-	public List<Task> getTasksBySeverity(int severity) {
+	public List<Task> getTaskBySeverity(int severity) {
 		return taskRepo.findBySeverity(severity);
 	}
 
