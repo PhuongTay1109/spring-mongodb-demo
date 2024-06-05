@@ -56,7 +56,7 @@ public class TaskController {
         return service.updateTask(task);
     }
 
-    @DeleteMapping("/{taskId}")
+    @DeleteMapping("delete/{taskId}")
     public String deleteTask(@PathVariable String taskId){
         return service.deleteTask(taskId);
     }
